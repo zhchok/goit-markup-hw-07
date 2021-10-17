@@ -13,6 +13,8 @@
 	--title-text-color:#212121;
 	--accent-color:#2196F3;
 	--primary-white-color: #FFFFFF;
+	--second-bg-color: #F5F4FA;
+	--footer-bg-color: #2F303A;
 }
 
 body{
@@ -53,12 +55,18 @@ body{
 	color: var(--primary-white-color)
 }
 .hero{
-		background-color: #2F303A;
+		background-color: var(--footer-bg-color);
 }
+/* Button */
 .button{
-	background-color: var(--accent-color);
-	color: var(--primary-white-color)
+	color: var(--title-text-color);
+	background-color: var(--primary-white-color);
 }
+.button.primary{
+	color: var(--primary-white-color);
+	background-color: var(--accent-color);
+}
+
 /* Section */
 
 .section-title{
@@ -70,16 +78,31 @@ body{
 }
 
 .team{
-	background-color: #F5F4FA
+	background-color: var(--second-bg-color);
 }
 .team-list .title{
 	color: var(--title-text-color);
 }
 
+/* Portfolio */
+
+.section .title{
+	color: var(--title-text-color);
+}
+
+.section .link{
+	color: var(--primary-text-color);
+}
+.button-list .button:hover,
+.button-list .button:focus{
+	color: var(--primary-white-color);
+	background-color: var(--accent-color);
+}
+
 /* Footer */
 
 .footer{
-	background-color: #2F303A ;
+	background-color: var(--footer-bg-color);
 }
 .footer .logo{
 	color: var(--accent-color);
