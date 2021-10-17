@@ -22,6 +22,7 @@ body{
   color: var(--primary-text-color);
 
   font-family: robot, sans-serif;
+  font-style: normal;
 }
 
 .list{
@@ -117,9 +118,6 @@ color: var(--accent-color);
 }
 .footer .logo-text{
 	color: var(--primary-white-color)
-}
-.address{
-	font-style: normal;
 }
 .contacts-list .address{
 	color: var(--primary-white-color)
