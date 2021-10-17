@@ -1,0 +1,105 @@
+/* цвет основного текста  #212121; */
+/* вторичный текст  #757575; */
+/* белый цвет фона #FFFFFF; */
+/* цвет акцента  #2196F3; */
+/* вторичный цвeт фона #E5E5E5; */
+/* цвет блока команда #F5F4FA */
+/* цвет героя и футера #2F303A */
+/* цвет текста в футере #FFFFFF99;
+ */
+
+:root{
+	--primary-text-color:#757575;
+	--title-text-color:#212121;
+	--accent-color:#2196F3;
+	--primary-white-color: #FFFFFF;
+}
+
+body{
+  background-color:var(--primary-white-color)
+  color: var(--primary-text-color);
+}
+
+.list{
+  list-style: none;
+}
+
+/* Шапка */
+
+.logo{
+  color: var(--accent-color);
+}
+.logo-text{
+  color: var(--title-text-color);
+}
+/* SiteNav */
+.site-nav .link{
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus{
+	color: var(--accent-color);
+}
+.contacts-nav .link{
+	color: var(--primary-text-color);
+}
+.contacts-nav .link:hover,
+.contacts-nav .link:focus{
+	color: var(--accent-color);
+}
+
+/* Hero */
+.hero-title{
+	color: var(--primary-white-color)
+}
+.hero{
+		background-color: #2F303A;
+}
+.button{
+	background-color: var(--accent-color);
+	color: var(--primary-white-color)
+}
+/* Section */
+
+.section-title{
+	color: var(--title-text-color);
+}
+
+.feature-list .title{
+	color: var(--title-text-color);
+}
+
+.team{
+	background-color: #F5F4FA
+}
+.team-list .title{
+	color: var(--title-text-color);
+}
+
+/* Footer */
+
+.footer{
+	background-color: #2F303A ;
+}
+.footer .logo{
+	color: var(--accent-color);
+}
+.footer .logo-text{
+	color: var(--primary-white-color)
+}
+
+.contacts-list .address{
+	color: var(--primary-white-color)
+}
+
+.contacts-list .contacts{
+	color:#FFFFFF99;
+}
+
+.contacts-list .link:hover,
+.contacts-list .link:focus{
+	color: var(--accent-color);
+}
+
+
+
