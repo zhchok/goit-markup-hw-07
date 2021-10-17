@@ -66,6 +66,9 @@ body{
 	color: var(--primary-white-color);
 	background-color: var(--accent-color);
 }
+.button.secondary{
+	background-color: var(--second-bg-color);
+}
 
 /* Section */
 
