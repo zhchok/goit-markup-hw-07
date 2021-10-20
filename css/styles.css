@@ -23,7 +23,7 @@ body{
 
   font-family: Roboto, sans-serif;
 }
-
+/* универсальные елементы */
 .link{
 	text-decoration: none;
 	font-style: normal; /*Добавил чтобы текст в теге адрес небыл курсив*/
@@ -166,7 +166,7 @@ background-color: #188CE8;
    letter-spacing: 0.03em;
 }
 
-/* Portfolio */
+/* Portfolio-page */
 
 .section .title{
 	color: var(--title-text-color);
