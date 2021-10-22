@@ -15,6 +15,7 @@
 	--primary-white-color: #FFFFFF;
 	--second-bg-color: #F5F4FA;
 	--footer-bg-color: #2F303A;
+	--button-primary-hover: #188CE8;
 }
 
 body{
@@ -32,6 +33,9 @@ body{
   list-style: none;
 }
 
+.title{
+	color: var(--title-text-color);
+}
 /* Шапка */
 
 .logo{
@@ -99,7 +103,7 @@ color: var(--accent-color);
 }
 .hero .button:hover,
 .hero .button:focus{
-background-color: #188CE8;
+background-color: var(--button-primary-hover);
 }
 /* Button */
 
@@ -117,21 +121,13 @@ background-color: #188CE8;
 	background-color: var(--second-bg-color);
 }
 
-/* Section */
+/* Преимущества*/
 
-.section-title{
-	color: var(--title-text-color);
-
-	font-weight: 700;
-   font-size: 36px;
-   line-height: 1.14;
-   text-align: center;
-   letter-spacing: 0.03em;   
+.advantage-title{
+ 
 }
 
-.feature-list .title{
-	color: var(--title-text-color);
-
+.advantage__sub-title.title{
 	font-weight: 700;
    font-size: 14px;
    line-height: 1.14;
@@ -139,18 +135,32 @@ background-color: #188CE8;
    text-transform: uppercase;   
 }
 
-.feature-text{
+.advantage-text{
 	font-size: 14px;
    line-height: 1.71;
    letter-spacing: 0.03em;
 }
-
+/* Чем мы занимаемся */
+.doing-title.title{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+}
+/* команда */
 .team{
 	background-color: var(--second-bg-color);
 }
-.team-list .title{
-	color: var(--title-text-color);
+.team-title.title{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+}
 
+.team__sub-title.title{
 	font-weight: 500;
    font-size: 16px;
    line-height: 1.18;
@@ -158,7 +168,7 @@ background-color: #188CE8;
    letter-spacing: 0.03em;   
 }
 
-.sub-title{
+.team-text{
 	font-size: 16px;
    line-height: 1.18;
    text-align: center;
@@ -166,40 +176,30 @@ background-color: #188CE8;
 }
 
 /* Portfolio-page */
-
-.section .title{
-	color: var(--title-text-color);
-
-	font-weight: 700;
-   font-size: 18px;
-   line-height: 2;
-   letter-spacing: 0.06em;
-}
-
-.section .link{
+.portfolio .link{
 	color: var(--primary-text-color);
 }
-.button-list .button{
+.portfolio__button-list .button{
 	font-weight: 500;
    font-size: 16px;
    line-height: 1.62;
    text-align: center;
    letter-spacing: 0.03em;
 }
-.button-list .button:hover,
-.button-list .button:focus{
+.portfolio__button-list .button:hover,
+.portfolio__button-list .button:focus{
 	color: var(--primary-white-color);
 	background-color: var(--accent-color);
 }
 
-.portfoli-list .title{
+.portfolio-title.title{
    font-weight: 700;
    font-size: 18px;
    line-height: 2;
    letter-spacing: 0.06em;
 }
 
-.portfoli-list .sub-title{
+.portfolio-text{
    font-size: 16px;
    line-height: 1.87;
    letter-spacing: 0.03em;
