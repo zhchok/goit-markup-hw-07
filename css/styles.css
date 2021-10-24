@@ -24,6 +24,10 @@ body{
 
   font-family: Roboto, sans-serif;
 }
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
 /* универсальные елементы */
 .link{
 	text-decoration: none;
