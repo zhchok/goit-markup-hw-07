@@ -17,12 +17,21 @@
 	--footer-bg-color: #2F303A;
 	--button-primary-hover: #188CE8;
 }
-
+html{
+	box-sizing: border-box;
+}
+*,*::before,*::after{
+	box-sizing: inherit;
+}
 body{
   background-color:var(--primary-white-color);
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
 }
 .container{
 	width: 1200px;
@@ -32,13 +41,27 @@ body{
 .link{
 	text-decoration: none;
 }
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
 
 .list{
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .title{
 	color: var(--title-text-color);
+}
+.section{
+	padding: 94px 0px;
+}
+.centred{
+	text-align: center;
 }
 /* Шапка */
 
@@ -83,27 +106,31 @@ color: var(--accent-color);
 }
 
 /* Hero */
-.hero-title{
+.hero-title.centred{
 	color: var(--primary-white-color);
 
 	font-weight: 900;
    font-size: 44px;
    line-height: 1.4;
-   text-align: center;
    letter-spacing: 0.06em;   
    text-transform: uppercase;
+
+	margin-top: 0px;
+	margin-bottom: 30px;
 }
 .hero{
 		background-color: var(--footer-bg-color);
+		margin-bottom: 94px;
 }
 .hero .button{
 	font-weight: 700;
    font-size: 16px;
    line-height: 1.87;   
-	display: flex;
    align-items: center;
    text-align: center;
-   letter-spacing: 0.06em;  
+   letter-spacing: 0.06em; 
+	border: 1px solid var(--accent-color);	
+	margin-bottom: 200px;
 }
 .hero .button:hover,
 .hero .button:focus{
@@ -116,60 +143,85 @@ background-color: var(--button-primary-hover);
 	color: var(--title-text-color);
 	background-color: var(--primary-white-color);
 	cursor: pointer;
+border-radius: 4px;
+border: 1px solid transparent;
 }
 .button.primary{
 	color: var(--primary-white-color);
 	background-color: var(--accent-color); 
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	padding: 10px 32px;
 }
 .button.secondary{
 	background-color: var(--second-bg-color);
+	padding: 6px 22px;
 }
 
 /* Преимущества*/
 
-.advantage-title{
+.feature-title{
  
 }
 
-.advantage__sub-title.title{
+.feature-title.title{
 	font-weight: 700;
    font-size: 14px;
    line-height: 1.14;
    letter-spacing: 0.03em;
    text-transform: uppercase;   
 }
+.feature-sub-title{
+margin-bottom: 10px;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
 
-.advantage-text{
+.feature-text{
 	font-size: 14px;
    line-height: 1.71;
    letter-spacing: 0.03em;
+	margin-top:0px;
+	margin-bottom: 94px;
 }
 /* Чем мы занимаемся */
-.doing-title.title{
+.doing-title.title.centred{
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
-text-align: center;
 letter-spacing: 0.03em;
+margin-bottom: 49px;
+}
+.doing-list{
+	margin-bottom: 94px;
 }
 /* команда */
 .team{
 	background-color: var(--second-bg-color);
 }
-.team-title.title{
+.team-list{
+	padding-bottom: 94px;
+}
+.team-img{
+	margin-bottom: 30px;
+}
+.team-title.title.centred{
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
-text-align: center;
 letter-spacing: 0.03em;
+margin-bottom: 50px;
 }
 
-.team__sub-title.title{
+.team-sub-title.title.centred{
 	font-weight: 500;
    font-size: 16px;
    line-height: 1.18;
-   text-align: center;
    letter-spacing: 0.03em;   
+	margin-bottom: 10px;
 }
 
 .team-text{
@@ -177,36 +229,49 @@ letter-spacing: 0.03em;
    line-height: 1.18;
    text-align: center;
    letter-spacing: 0.03em;
+	margin-top: 0px;
+	margin-bottom: 30px;
+
 }
 
 /* Portfolio-page */
-.portfolio .link{
+.section .link{
 	color: var(--primary-text-color);
 }
-.portfolio__button-list .button{
+.portfolio-button-list{
+	margin-top: 94px;
+	margin-bottom: 34px;
+}
+.portfolio-button-list .button{
 	font-weight: 500;
    font-size: 16px;
    line-height: 1.62;
    text-align: center;
    letter-spacing: 0.03em;
 }
-.portfolio__button-list .button:hover,
-.portfolio__button-list .button:focus{
+.portfolio-button-list .button:hover,
+.portfolio-button-list .button:focus{
 	color: var(--primary-white-color);
 	background-color: var(--accent-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
+.portfolio-img{
+	margin-bottom: 20px;
+}
 .portfolio-title.title{
    font-weight: 700;
    font-size: 18px;
    line-height: 2;
    letter-spacing: 0.06em;
+	margin-bottom: 4px;
 }
 
 .portfolio-text{
    font-size: 16px;
    line-height: 1.87;
    letter-spacing: 0.03em;
+	margin-top: 0px;
+	margin-bottom: 20px;
 }
 
 /* Footer */
@@ -223,10 +288,26 @@ address{
 .footer .logo-text{
 	color: var(--primary-white-color)
 }
+.logo{
+	display: block;
+	margin-bottom: 20px;
+	padding-top: 60px;
+}
 .contacts-list{
 	font-size: 14px;
    line-height: 1.71;
    letter-spacing: 0.03em;
+}
+.item-list{
+	margin-bottom: 9px;
+}
+.item-list:last-child{
+	margin-bottom: 0px;
+}
+.contacts-list>li:last-child{
+	margin-top: 0px;
+	padding-bottom: 60px;
+
 }
 .contacts-list .address{
 	color: var(--primary-white-color)
