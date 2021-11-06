@@ -1,120 +1,144 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 	rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
 		integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/styles.css" />
+   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
-  <!-- Шапка Сайта -->
+   <!-- Шапка Сайта -->
 	<header class="header">
-		<div class="container">
-			<nav>
+		<div class="flex-nav container">
+			<nav class="main-nav">
 				<a lang="en" href="./index.html" class="logo link">Web<span class="logo-text">Studio</span></a>
 				<ul class="site-nav list">
-					<li>
+					<li class="item">
 						<a class="link" href="./index.html">Студия</a>
 					</li>
-					<li>
+					<li class="item">
 						<a class="link current" href="./portfolio.html">Портфолио</a>
 					</li>
-					<li>
+					<li class="item">
 						<a class="link" href="">Контакты</a>
 					</li>
 				</ul>
 			</nav>
 			<ul class="contacts-nav list">
-				<li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-				<li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+				<li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+				<l class="item" i><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></l>
 			</ul>
 		</div>
 	</header>
-  <!-- Основная информация -->
-  <main>
+   <!-- Основная информация -->
+<main>
 	<section class="section container">
-    <h1>Портфолио</h1>
-  <ul class="portfolio-button-list list">
-    <li><button class="button secondary" type="button">Все</button></li>
-    <li><button class="button secondary" type="button">Веб-сайты</button></li>
-    <li><button class="button secondary" type="button">Приложения</button></li>
-    <li><button class="button secondary" type="button">Дизайн</button></li>
-    <li><button class="button secondary" type="button">Маркетинг</button></li>
-  </ul>
-    <ul class="portfolio-list list">
-      <li>
-        <a class="link"  href="">
-			  <img class="portfolio-img" width="370" src="./images/image-portfolio/img-1.jpg" alt="Ноутбук с открытым сайтом">
-      <h2  class="portfolio-title title">Технокряк</h2> 
-		<p class="portfolio-text" >Веб-сайт</p>
-      </a>
-    </li>
-      <li>
-        <a class="link"  href="">
-        <img class="portfolio-img" width="370" src="./images/image-portfolio/img-2.jpg" alt="Два баскетболиста">
-        <h2 class="portfolio-title title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-        <p class="portfolio-text" >Дизайн</p>
-      </a>
-    </li>
-      <li>
-        <a class="link"  href="">
-        <img class="portfolio-img" width="370" src="./images/image-portfolio/img-3.jpg" alt="Нарисованая рыба логотип ресторана">
-        <h2 class="portfolio-title title">Ресторан <span lang="en">Seafood</spanlang="en"></h2>
-        <p class="portfolio-text" >Приложение</p>
-      </a>
-    </li>
-      <li>
-        <a class="link"  href="">
-        <img class="portfolio-img" width="370" src="./images/image-portfolio/img-4.jpg" alt="Черные наушники">
-        <h2 class="portfolio-title title">Проект <span lang="en">Prime</span></h2>
-        <p class="portfolio-text" >Маркетинг</p>
-      </a>
-    </li>
-      <li>
-        <a class="link"  href="">
-        <img class="portfolio-img" width="370" src="./images/image-portfolio/img-5.jpg" alt="Две картонные коробки">
-        <h2 class="portfolio-title title">Проект <span lang="en">Boxes</span></h2>
-        <p class="portfolio-text" >Приложение</p>
-      </a>
-    </li>
-      <li>
-        <a class="link"  href="">
-        <img class="portfolio-img" width="370" src="./images/image-portfolio/img-6.jpg" alt="Монитор">
-        <h2 lang="en" class="portfolio-title title">Inspiration has no Borders</h2>
-        <p class="portfolio-text" >Веб-сайт</p>
-      </a>
-    </li>
-      <li>
-        <a class="link"  href="">
-        <img class="portfolio-img" width="370" src="./images/image-portfolio/img-7.jpg" alt="Открытая книнга">
-        <h2 class="portfolio-title title">Издание <span lang="en">Limited Edition</span></h2>
-        <p class="portfolio-text" >Дизайн</p>
-      </a>
-    </li>
-      <li>
-        <a class="link"  href="">
-        <img class="portfolio-img" width="370" src="./images/image-portfolio/img-8.jpg" alt="Открытая книнга">
-        <h2 class="portfolio-title title">Проект <span lang="en">LAB</span></h2>
-        <p class="portfolio-text" >Маркетинг</p>
-      </a>
-    </li>
-      <li>
-        <a  class="link" href="">
-        <img class="portfolio-img" width="370" src="./images/image-portfolio/img-9.jpg" alt="Руки работающие за ноутбуком">
-        <h2 lang="en" class="portfolio-title title">Growing Business</h2>
-        <p class="portfolio-text" >Приложение</p>
-      </a>
-    </li>
-    </ul>
-  </section>
-  </main>
+   <h1 class="visually-hidden">Портфолио</h1>
+   <ul class="portfolio-button-list list">
+      <li class="item"><button class="button secondary" type="button">Все</button></li>
+      <li class="item"><button class="button secondary" type="button">Веб-сайты</button></li>
+      <li class="item"><button class="button secondary" type="button">Приложения</button></li>
+      <li class="item"><button class="button secondary" type="button">Дизайн</button></li>
+      <li class="item"><button class="button secondary" type="button">Маркетинг</button></li>
+   </ul>
+   <ul class="portfolio-list list">
+  <div class="flex-item">
+  	    <li class="item">
+	         <a class="link"  href="">
+				<img class="portfolio-img" width="370" src="./images/image-portfolio/img-1.jpg" alt="Ноутбук с открытым сайтом">
+	      <div class=" border padding">
+	      	<h2  class="portfolio-title title ">Технокряк</h2> 
+				<p class="portfolio-text " >Веб-сайт</p>
+	      </div>
+	      </a>
+	   </li>
+	      <li class="item">
+	         <a class="link"  href="">
+	         <img class="portfolio-img" width="370" src="./images/image-portfolio/img-2.jpg" alt="Два баскетболиста">
+	         <div class="border padding">
+	         	<h2 class="portfolio-title title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+		         <p class="portfolio-text" >Дизайн</p>
+	         </div>
+	      </a>
+	   </li>
+	      <li class="item">
+	         <a class="link"  href="">
+	         <img class="portfolio-img" width="370" src="./images/image-portfolio/img-3.jpg" alt="Нарисованая рыба логотип ресторана">
+	         <div class="border padding">
+	         	<h2 class="portfolio-title title">Ресторан <span lang="en">Seafood</spanlang="en"></h2>
+		         <p class="portfolio-text" >Приложение</p>
+	         </div>
+	      </a>
+	   </li>
+  </div>
+    <div class="flex-item">
+    	  <li class="item">
+	         <a class="link"  href="">
+	         <img class="portfolio-img" width="370" src="./images/image-portfolio/img-4.jpg" alt="Черные наушники">
+	         <div class="border padding">
+	         	<h2 class="portfolio-title title">Проект <span lang="en">Prime</span></h2>
+		         <p class="portfolio-text" >Маркетинг</p>
+	         </div class="padding">
+	      </a>
+	   </li>
+	      <li class="item">
+	         <a class="link"  href="">
+	         <img class="portfolio-img" width="370" src="./images/image-portfolio/img-5.jpg" alt="Две картонные коробки">
+	         <div class="border padding">
+	         	<h2 class="portfolio-title title">Проект <span lang="en">Boxes</span></h2>
+		         <p class="portfolio-text" >Приложение</p>
+	         </div>
+	      </a>
+	   </li>
+	      <li class="item">
+	         <a class="link"  href="">
+	         <img class="portfolio-img" width="370" src="./images/image-portfolio/img-6.jpg" alt="Монитор">
+	        <div class="border padding">
+	        	 <h2 lang="en" class="portfolio-title title">Inspiration has no Borders</h2>
+		         <p class="portfolio-text" >Веб-сайт</p>
+	        </div>
+	      </a>
+	   </li>
+    </div>
+  <div class="flex-item">
+  	    <li class="item">
+	         <a class="link"  href="">
+	         <img class="portfolio-img" width="370" src="./images/image-portfolio/img-7.jpg" alt="Открытая книнга">
+	        <div class="border padding">
+	        	 <h2 class="portfolio-title title">Издание <span lang="en">Limited Edition</span></h2>
+		         <p class="portfolio-text" >Дизайн</p>
+	        </div>
+	      </a>
+	   </li>
+	      <li class="item">
+	         <a class="link"  href="">
+	         <img class="portfolio-img" width="370" src="./images/image-portfolio/img-8.jpg" alt="Открытая книнга">
+	         <div class="border padding">
+	         	<h2 class="portfolio-title title">Проект <span lang="en">LAB</span></h2>
+		         <p class="portfolio-text" >Маркетинг</p>
+	         </div>
+	      </a>
+	   </li>
+	      <li class="item">
+	         <a  class="link" href="">
+	         <img class="portfolio-img" width="370" src="./images/image-portfolio/img-9.jpg" alt="Руки работающие за ноутбуком">
+	         <div class="border padding">
+	         	<h2 lang="en" class="portfolio-title title">Growing Business</h2>
+		         <p class="portfolio-text" >Приложение</p>
+	         </div>
+	      </a>
+	   </li>
+  </div>
+   </ul>
+   </section>
+</main>
   <!-- Подвал -->
 <footer class="footer">
 	<div class="container">
