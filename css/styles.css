@@ -19,9 +19,6 @@
 	--line-color: #ECECEC;
 	--border-color: #EEEEEE;
 }
-html{
-	box-sizing: border-box;
-}
 
 body{
    background-color:var(--primary-white-color);
@@ -82,7 +79,6 @@ h1,h2,h3,h4,h5,h6{
 }
 .logo{
    color: var(--accent-color);
-
    font-family: Raleway, sans-serif;
    font-weight: 700;
    font-size: 26px;
@@ -111,14 +107,14 @@ h1,h2,h3,h4,h5,h6{
 }
 .site-nav .link{
 	display: block;
-   color: var(--title-text-color);
+	padding-top: 32px;
+   padding-bottom: 32px;
 
+   color: var(--title-text-color);
    font-weight: 500;
    font-size: 14px;
    line-height: 1.14;
    letter-spacing: 0.02em;
-   padding-top: 32px;
-   padding-bottom: 32px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus{
@@ -151,23 +147,25 @@ margin-left: 50px;
 
 .hero-title.centred{
 	display: inline-block;
-	color: var(--primary-white-color);
 	max-width: 696px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+
+	color: var(--primary-white-color);
 	font-weight: 900;
    font-size: 44px;
    line-height: 1.4;
    letter-spacing: 0.06em;   
    text-transform: uppercase;
-	margin-top: 0px;
-	margin-bottom: 30px;
 }
 .hero{
-		background-color: var(--footer-bg-color);
+	background-color: var(--footer-bg-color);
 }
 
 .hero .button{
 	display: block;
 	margin: 0 auto;
+
 	font-weight: 700;
    font-size: 16px;
    line-height: 1.87;   
@@ -176,7 +174,7 @@ margin-left: 50px;
 }
 .hero .button:hover,
 .hero .button:focus{
-background-color: var(--button-primary-hover);
+	background-color: var(--button-primary-hover);
 }
 /* Button */
 
@@ -185,8 +183,8 @@ background-color: var(--button-primary-hover);
 	color: var(--title-text-color);
 	background-color: var(--primary-white-color);
 	cursor: pointer;
-border-radius: 4px;
-border: 1px solid transparent;
+   border-radius: 4px;
+	border: 1px solid transparent;
 }
 .button.primary{
 	color: var(--primary-white-color);
@@ -216,30 +214,33 @@ border: 1px solid transparent;
    text-transform: uppercase;   
 }
 .feature-sub-title{
-margin-bottom: 10px;
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+	margin-bottom: 10px;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
 }
 
 .feature-text{
+	margin-top:0px;
+
 	font-size: 14px;
    line-height: 1.71;
    letter-spacing: 0.03em;
-	margin-top:0px;
 }
 /* Чем мы занимаемся */
 .doing-title.title.centred{
-font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
-letter-spacing: 0.03em;
-margin-bottom: 49px;
+	margin-top:0px;
+
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	letter-spacing: 0.03em;
 }
 .doing-list{
-display: flex;
+	display: flex;
 }
 
 .doing-list .item + .item{
@@ -250,7 +251,7 @@ display: flex;
 	background-color: var(--second-bg-color);
 }
 .team-list{
-display: flex;
+	display: flex;
 }
 .team-list .item{
 	background-color: var(--primary-white-color);
@@ -261,32 +262,37 @@ display: flex;
 	margin-left: 30px;
 }
 .team-img{
+	display: block;
 	margin-bottom: 30px;
 }
 .team-title.title.centred{
-font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
-letter-spacing: 0.03em;
-margin-bottom: 50px;
+	margin-bottom: 50px;
+
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	letter-spacing: 0.03em;
+	
 }
 
 .team-sub-title.title.centred{
+	margin-bottom: 10px;
+
 	font-weight: 500;
    font-size: 16px;
    line-height: 1.18;
    letter-spacing: 0.03em;   
-	margin-bottom: 10px;
+
 }
 
 .team-text{
+	margin-top: 0px;
+	margin-bottom: 30px;
+
 	font-size: 16px;
    line-height: 1.18;
    text-align: center;
    letter-spacing: 0.03em;
-	margin-top: 0px;
-	margin-bottom: 30px;
-
 }
 
 /* Portfolio-page */
@@ -294,9 +300,9 @@ margin-bottom: 50px;
 	color: var(--primary-text-color);
 }
 .portfolio-button-list{
-display: flex;
-justify-content: center;
-margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
 }
 
 .portfolio-button-list .item + .item{
@@ -320,7 +326,7 @@ margin-bottom: 50px;
 	background: var(--primary-white-color);
 }
 .portfolio-img{
-display: block;
+	display: block;
 }
 .padding{
 	padding-top: 20px;
@@ -330,8 +336,8 @@ display: block;
 }
 .portfolio-list .border{
 	background: var(--primary-white-color);
-border: 1px solid var(--border-color);
-border-top: transparent;
+	border: 1px solid var(--border-color);
+	border-top: transparent;
 }
 .flex-item{
 	display: flex;
