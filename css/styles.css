@@ -148,16 +148,11 @@ margin-left: 50px;
 }
 
 /* Hero */
-.hero .container{
-	display: flex;
-	align-items: center;
-	text-align: center;
-	justify-content: center;
-	flex-direction: column;
-}
+
 .hero-title.centred{
+	display: inline-block;
 	color: var(--primary-white-color);
-	width: 696px;
+	max-width: 696px;
 	font-weight: 900;
    font-size: 44px;
    line-height: 1.4;
@@ -171,6 +166,8 @@ margin-left: 50px;
 }
 
 .hero .button{
+	display: block;
+	margin: 0 auto;
 	font-weight: 700;
    font-size: 16px;
    line-height: 1.87;   
