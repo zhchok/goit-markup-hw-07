@@ -39,7 +39,7 @@ h1,h2,h3,h4,h5,h6{
 	text-decoration: none;
 }
 .container{
-	width: 1200px;
+	width: 1230px;
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -146,9 +146,8 @@ margin-left: 50px;
 /* Hero */
 
 .hero-title.centred{
-	display: inline-block;
-	max-width: 696px;
-	margin-top: 0px;
+	width: 696px;
+	margin: auto;
 	margin-bottom: 30px;
 
 	color: var(--primary-white-color);
@@ -160,10 +159,10 @@ margin-left: 50px;
 }
 .hero{
 	background-color: var(--footer-bg-color);
+	text-align: center;
 }
 
 .hero .button{
-	display: block;
 	margin: 0 auto;
 
 	font-weight: 700;
