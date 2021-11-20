@@ -524,6 +524,7 @@ address {
 }
 .footer-wrapper {
   display: flex;
+  align-items: baseline;
 }
 .address-wrapper {
   margin-right: 70px;
