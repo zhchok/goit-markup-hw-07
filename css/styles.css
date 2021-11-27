@@ -466,7 +466,7 @@ button {
 	background: var(--primary-white-color);
 }
 .portfolio-item:hover .portfolio-description,
-.portfolio-item:focus .portfolio-description {
+.portfolio-item-link:focus .portfolio-description {
 	transform: translateY(0);
 }
 .portfolio-overlay {
