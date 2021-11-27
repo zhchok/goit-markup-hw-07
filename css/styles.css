@@ -478,6 +478,7 @@ button {
 	left: 0;
 	transform: translateY(100%);
 	width: 100%;
+	/* height: 100%; */
 	padding: 63px 24px;
 	font-size: 18px;
 	line-height: 1.56;
