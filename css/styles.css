@@ -41,6 +41,9 @@ a {
 address {
 	font-style: normal;
 }
+button {
+	cursor: pointer;
+}
 
 /* универсальные елементы */
 
@@ -269,9 +272,29 @@ address {
 .about-list {
 	display: flex;
 }
-
+.about-item {
+	position: relative;
+}
 .about-item + .about-item {
 	margin-left: 30px;
+}
+.about-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
+	height: 70px;
+	bottom: 0;
+	left: 0px;
+	background-color: rgba(47, 48, 58, 0.8);
+	font-size: 14px;
+	line-height: 1.14;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: #ffffff;
 }
 /* команда */
 .team {
@@ -442,6 +465,28 @@ address {
 	margin-right: 30px;
 	background: var(--primary-white-color);
 }
+.portfolio-item:hover .portfolio-description {
+	transform: translateY(0);
+}
+.portfolio-overlay {
+	position: relative;
+	overflow: hidden;
+}
+.portfolio-description {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateY(100%);
+	width: 100%;
+	padding: 63px 24px;
+	font-size: 18px;
+	line-height: 1.56;
+	letter-spacing: 0.03em;
+	color: #ffffff;
+	background-color: rgba(33, 150, 243, 0.9);
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .portfolio-item-link {
 	display: block;
 	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -485,7 +530,6 @@ address {
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
-
 /* Footer */
 
 .footer {
@@ -580,4 +624,49 @@ address {
 .follow-social-link:hover,
 .follow-social-link:focus {
 	background-color: var(--accent-color);
+}
+.backdrop {
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.2);
+	width: 100vw;
+	height: 100vh;
+	opacity: 1;
+	transform: scale(100%);
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+	transform: scale(0);
+}
+
+.modal {
+	position: absolute;
+	min-width: 528px;
+	min-height: 581px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	background: #ffffff;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+}
+
+.modal-close {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 8px;
+	top: 8px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+	background-color: #ffffff;
 }
