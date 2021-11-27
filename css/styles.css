@@ -465,7 +465,8 @@ button {
 	margin-right: 30px;
 	background: var(--primary-white-color);
 }
-.portfolio-item:hover .portfolio-description {
+.portfolio-item:hover .portfolio-description,
+.portfolio-item:focus .portfolio-description {
 	transform: translateY(0);
 }
 .portfolio-overlay {
@@ -478,7 +479,6 @@ button {
 	left: 0;
 	transform: translateY(100%);
 	width: 100%;
-	/* height: 100%; */
 	padding: 63px 24px;
 	font-size: 18px;
 	line-height: 1.56;
