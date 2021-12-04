@@ -418,6 +418,30 @@
 						<use href="./images/icons.svg#icon-close"></use>
 					</svg>
 				</button>
+				<form action="order__form">
+					<p>Оставьте свои данные, мы вам перезвоним</p>
+					<label>
+						Имя
+						<input type="text" name="user-name" />
+					</label>
+					<label>
+						Телефон
+						<input type="tel" name="user-tel" />
+					</label>
+					<label>
+						Почта
+						<input type="email" name="user-email" />
+					</label>
+					<label>
+						Комментарий
+						<textarea name="comment" rows="5" placeholder="Введите текст"></textarea>
+					</label>
+					<label>
+						<input type="checkbox" name="agreement" value=""></input>
+						Соглашаюсь с рассылкой и принимаю <span class="agreement-text">Условия договора</span>
+					</label>
+					<button type="submit">Отправить</button>
+				</form>
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
