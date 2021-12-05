@@ -412,14 +412,14 @@
 						<h2 class="mailing-title">Подпишитесь на рассылку</h2>
 						<form action="#" class="mailing-form">
 							<label>
-								<input type="email"
-								class="mailing-input" 
-								name="mailing-name" placeholder="E-mail">
-								<button class="mailing-button" type="submit">Подписаться <svg class="mailing-icon" width="24" height="24">
-										<use href="./images/icons.svg#icon-send"></use>
-									</svg></button>
-								
+								<input type="email" class="mailing-input" name="mailing-name" placeholder="E-mail" />
 							</label>
+							<button class="mailing-button" type="submit">
+								Подписаться
+								<svg class="mailing-icon" width="24" height="24">
+									<use href="./images/icons.svg#icon-send"></use>
+								</svg>
+							</button>
 						</form>
 					</div>
 				</div>
@@ -432,39 +432,39 @@
 						<use href="./images/icons.svg#icon-close"></use>
 					</svg>
 				</button>
-				<p class="modal-title">Оставьте свои данные, мы вам перезвоним</р>
+				<p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
 				<form action="#" class="modal-form">
 					<div class="modal-form-field">
 						<label class="modal-input-text">
 							<span class="modal-input-text">Имя</span>
-							<div class="modal-input-wrapper">
+							<span class="modal-input-wrapper">
 								<input type="text" name="user-name" class="modal-input" />
-								<svg class="input-icon " width="18" height="18" >
+								<svg class="input-icon" width="18" height="18">
 									<use href="./images/icons.svg#icon-people"></use>
 								</svg>
-							</div>
+							</span>
 						</label>
 					</div>
 					<div class="modal-form-field">
 						<label class="modal-input-text">
 							<span class="modal-input-text">Телефон</span>
-							<div class="modal-input-wrapper">
+							<span class="modal-input-wrapper">
 								<input type="text" name="user-name" class="modal-input" />
-								<svg class="input-icon " width="18" height="18" >
+								<svg class="input-icon" width="18" height="18">
 									<use href="./images/icons.svg#icon-tel"></use>
 								</svg>
-							</div>
+							</span>
 						</label>
 					</div>
 					<div class="modal-form-field">
-						<label >
+						<label>
 							<span class="modal-input-text">Почта</span>
-							<div class="modal-input-wrapper">
+							<span class="modal-input-wrapper">
 								<input type="text" name="user-name" class="modal-input" />
-								<svg class="input-icon " width="18" height="18" >
+								<svg class="input-icon" width="18" height="18">
 									<use href="./images/icons.svg#icon-email"></use>
 								</svg>
-							</div>
+							</span>
 						</label>
 					</div>
 
@@ -475,9 +475,17 @@
 						</label>
 					</div>
 					<div class="agreement-wrapper">
-						<label>
-							<input type="checkbox" name="agreement" class="agreement-checkbox" value=""></input>
-							<b class="agreement-text">Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="">Условия договора</a></b>
+						<input type="checkbox" name="agreement" id="modal-check" class="modal-check visually-hidden" />
+						<label for="modal-check" class="modal-check-text">
+							<span>
+								<svg width="16" height="15" class="icon-check">
+									<use href="./images/icons.svg#icon-check"></use>
+								</svg>
+							</span>
+							<b class="agreement-text">
+								Соглашаюсь с рассылкой и принимаю
+								<a class="agreement-link" href="">Условия договора</a>
+							</b>
 						</label>
 						<button type="submit" class="modal-btn">Отправить</button>
 					</div>
