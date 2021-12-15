@@ -1,3 +1,25 @@
-body {
-	background-color: red;
-}
+@import "./utils/vars";
+@import "./utils/hidden";
+@import "./base/modern-normalize";
+@import "./base/reset";
+@import "./base/common";
+
+@import "./components/container";
+@import "./components/current";
+@import "./components/button";
+@import "./components/logo";
+@import "./components/socials";
+@import "./components/filters";
+@import "./components/address";
+@import "./components/follow";
+@import "./components/mailing";
+@import "./components/modal";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/about";
+@import "./layout/feature";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/portfolio";
+@import "./layout/footer";
