@@ -1,9 +1,11 @@
-.feature__list {
+.feature {
 	display: flex;
 }
 
-.feature__item + .feature__item {
-	margin-left: 30px;
+.feature__item {
+	& + & {
+		margin-left: 30px;
+	}
 }
 .feature__icon {
 	display: flex;

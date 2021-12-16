@@ -12,7 +12,7 @@
 	display: flex;
 }
 
-.socials__link_background_opacity {
+.socials__link_opacity {
 	background-color: rgba(255, 255, 255, 0.1);
 }
 .socials__link_white {
@@ -21,8 +21,7 @@
 .socials__icon {
 	fill: currentColor;
 }
-.socials__link:hover,
-.socials__link:focus {
+.socials__link {
 	&:hover,
 	&:focus {
 		background-color: var(--accent-color);

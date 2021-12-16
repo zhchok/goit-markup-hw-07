@@ -22,11 +22,11 @@
 	<body>
 		<!-- Шапка Сайта -->
 		<header class="header">
-			<div class="header-wrap container">
+			<div class="header__container container">
 				<nav class="header-nav">
-					<a lang="en" href="./index.html" class="header-logo logo">
+					<a lang="en" href="./index.html" class="header__logo logo">
 						Web
-						<span class="logo__text_dark">Studio</span>
+						<span class="logo__dark">Studio</span>
 					</a>
 					<ul class="header-nav__list">
 						<li class="header-nav__item">
@@ -40,8 +40,8 @@
 						</li>
 					</ul>
 				</nav>
-				<ul class="contacts contacts__list">
-					<li class="contacts__item contacts__icon">
+				<ul class="contacts">
+					<li class="contacts__item">
 						<a class="contacts__link" href="mailto:info@devstudio.com">
 							<svg class="contacts__icon" width="16" height="12">
 								<use href="./images/icons.svg#icon-envelope"></use>
@@ -70,10 +70,10 @@
 				</div>
 			</section>
 			<!-- Преимущества -->
-			<section class="feature section">
+			<section class="section">
 				<div class="container">
 					<h2 class="visually-hidden">Преимущества компании</h2>
-					<ul class="feature__list">
+					<ul class="feature">
 						<li class="feature__item">
 							<div class="feature__icon">
 								<svg class="" width="70" height="70">
@@ -120,10 +120,10 @@
 				</div>
 			</section>
 			<!-- Чем мы занимаемся -->
-			<section class="about section">
+			<section class="section section__no-padding-top">
 				<div class="container">
-					<h2 class="about__title">Чем мы занимаемся</h2>
-					<ul class="about__list">
+					<h2 class="section__title">Чем мы занимаемся</h2>
+					<ul class="about">
 						<li class="about__item">
 							<img width="370" src="./images/img.jpg" alt="Руки набирают текст на клавиатуре" />
 							<h2 class="about__text">Десктопные приложения</h2>
@@ -140,16 +140,16 @@
 				</div>
 			</section>
 			<!-- команда -->
-			<section class="team section">
+			<section class="section section__other-background">
 				<div class="container">
-					<h2 class="team__title">Наша команда</h2>
+					<h2 class="section__title">Наша команда</h2>
 					<ul class="team-list">
 						<li class="team-list__item">
 							<img class="" width="270" src="./images/photo-3.jpg" alt="" />
 							<div class="team-list__item-wrap">
-								<h3 class="team-list__sub-title">Игорь Демьяненко</h3>
+								<h3 class="team-list__title">Игорь Демьяненко</h3>
 								<p lang="en" class="team-list__text">Product Designer</p>
-								<ul class="team-list__socials socials">
+								<ul class="socials">
 									<li class="socials__item">
 										<a href="" class="socials__link">
 											<svg class="socials__icon" width="20" height="20">
@@ -184,9 +184,9 @@
 						<li class="team-list__item">
 							<img class="" width="270" src="./images/photo-2.jpg" alt="" />
 							<div class="team-list__item-wrap">
-								<h3 class="team-list__sub-title">Ольга Репина</h3>
+								<h3 class="team-list__title">Ольга Репина</h3>
 								<p lang="en" class="team-list__text">Frontend Developer</p>
-								<ul class="team-list__socials socials">
+								<ul class="socials">
 									<li class="socials__item">
 										<a href="" class="socials__link">
 											<svg class="socials__icon" width="20" height="20">
@@ -221,9 +221,9 @@
 						<li class="team-list__item">
 							<img class="" width="270" src="./images/photo-1.jpg" alt="" />
 							<div class="team-list__item-wrap">
-								<h3 class="team-list__sub-title">Николай Тарасов</h3>
+								<h3 class="team-list__title">Николай Тарасов</h3>
 								<p lang="en" class="team-list__text">Marketing</p>
-								<ul class="team-list__socials socials">
+								<ul class="socials">
 									<li class="socials__item">
 										<a href="" class="socials__link">
 											<svg class="socials__icon" width="20" height="20">
@@ -258,9 +258,9 @@
 						<li class="team-list__item">
 							<img class="" width="270" src="./images/photo.jpg" alt="" />
 							<div class="team-list__item-wrap">
-								<h3 class="team-list__sub-title">Михаил Ермаков</h3>
+								<h3 class="team-list__title">Михаил Ермаков</h3>
 								<p lang="en" class="team-list__text">UI Designer</p>
-								<ul class="team-list__socials socials">
+								<ul class="socials">
 									<li class="socials__item">
 										<a href="" class="socials__link">
 											<svg class="socials__icon" width="20" height="20">
@@ -296,9 +296,9 @@
 				</div>
 			</section>
 		</main>
-		<section class="clients section">
+		<section class="section">
 			<div class="container">
-				<h2 class="clients__title">Постоянные клиенты</h2>
+				<h2 class="section__title">Постоянные клиенты</h2>
 				<ul class="clients-list">
 					<li class="clients-list__item">
 						<a href="" class="clients-list__link">
@@ -377,30 +377,30 @@
 					</div>
 					<div class="follow">
 						<h2 class="follow__title">присоединяйтесь</h2>
-						<ul class="follow-list__socials socials">
+						<ul class="socials">
 							<li class="socials__item">
-								<a href="" class="socials__link socials__link_white socials__link_background_opacity">
+								<a href="" class="socials__link socials__link_white socials__link_opacity">
 									<svg class="socials__icon" width="20" height="20">
 										<use href="./images/icons.svg#icon-instagram"></use>
 									</svg>
 								</a>
 							</li>
 							<li class="socials__item">
-								<a href="" class="socials__link socials__link_white socials__link_background_opacity">
+								<a href="" class="socials__link socials__link_white socials__link_opacity">
 									<svg class="socials__icon" width="20" height="20">
 										<use href="./images/icons.svg#icon-twitter"></use>
 									</svg>
 								</a>
 							</li>
 							<li class="socials__item">
-								<a href="" class="socials__link socials__link_white socials__link_background_opacity">
+								<a href="" class="socials__link socials__link_white socials__link_opacity">
 									<svg class="socials__icon" width="20" height="20">
 										<use href="./images/icons.svg#icon-facebook"></use>
 									</svg>
 								</a>
 							</li>
 							<li class="socials__item">
-								<a href="" class="socials__link socials__link_white socials__link_background_opacity">
+								<a href="" class="socials__link socials__link_white socials__link_opacity">
 									<svg class="socials__icon" width="20" height="20">
 										<use href="./images/icons.svg#icon-linkedin"></use>
 									</svg>

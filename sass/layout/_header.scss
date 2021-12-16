@@ -1,7 +1,7 @@
 .header {
 	border-bottom: 1px solid var(--line-color);
 }
-.header-wrap {
+.header__container {
 	display: flex;
 }
 .header-nav {
@@ -12,7 +12,7 @@
 	display: flex;
 }
 .header-nav__item {
-	+ .header-nav__item {
+	& + & {
 		margin-left: 50px;
 	}
 }
@@ -34,14 +34,14 @@
 	}
 }
 
-.contacts__list {
+.contacts {
 	display: flex;
 	align-items: center;
 	margin-left: auto;
 }
 
 .contacts__item {
-	+ .contacts__item {
+	& + & {
 		margin-left: 50px;
 	}
 }

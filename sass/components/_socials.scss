@@ -1,9 +1,15 @@
+.socials {
+	display: flex;
+	justify-content: center;
+}
 .socials__item {
 	width: 44px;
 	height: 44px;
 }
-.socials__item + .socials__item {
-	margin-left: 10px;
+.socials__item {
+	& + & {
+		margin-left: 10px;
+	}
 }
 .socials__link {
 	width: 100%;

@@ -4,8 +4,10 @@
 	margin-bottom: 50px;
 }
 
-.filters-item + .filters-item {
-	margin-left: 8px;
+.filters-item {
+	& + & {
+		margin-left: 8px;
+	}
 }
 .filters-button {
 	background-color: var(--second-bg-color);
